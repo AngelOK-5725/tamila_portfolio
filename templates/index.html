@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+<script src="{% static 'js/main.js' %}"></script>
+{% block content %}
+    <!-- Hero / Stage Segment -->
+    {% include "components/hero.html" %}
+
+    <!-- Biography / Bento Segment -->
+    {% include "components/about.html" %}
+
+    <!-- Skills Core Matrix -->
+    {% include "components/skills.html" %}
+
+    <!-- Engineered Case Studies Segment -->
+    {% include "components/projects.html" %}
+
+    <!-- QA Laboratory Segment -->
+    {% include "components/qa_dashboard.html" %}
+
+    <!-- Vertical Expandable Timeline -->
+    {% include "components/experience.html" %}
+
+    <!-- Academic Studies Array -->
+    {% include "components/education.html" %}
+
+    <!-- Contact Connection Portal -->
+    {% include "components/contact.html" %}
+{% endblock %}

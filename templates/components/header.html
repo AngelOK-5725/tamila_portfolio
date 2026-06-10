@@ -1,0 +1,53 @@
+<header class="fixed top-0 left-0 w-full z-40 transition-all duration-300 backdrop-blur-md bg-brand-dark/70 border-b border-white/5" id="main-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <!-- Logo / Branding -->
+        <a href="#hero" class="flex items-center space-x-2 group">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-purple to-brand-teal flex items-center justify-center text-white font-display font-medium text-lg shadow-lg group-hover:scale-105 transition-transform duration-300">
+                TK
+            </div>
+            <span class="font-display font-bold text-xl tracking-tight bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent group-hover:from-brand-teal group-hover:to-brand-purple transition-all duration-300">
+                Tamila.dev
+            </span>
+        </a>
+
+        <!-- Desktop Navigation Routes -->
+        <nav class="hidden md:flex items-center space-x-8">
+            <a href="#about" class="text-sm font-medium text-gray-400 hover:text-white transition-colors duration-200" data-i18n="nav-about">About</a>
+            <a href="#skills" class="text-sm font-medium text-gray-400 hover:text-white transition-colors duration-200" data-i18n="nav-skills">Skills</a>
+            <a href="#projects" class="text-sm font-medium text-gray-400 hover:text-white transition-colors duration-200" data-i18n="nav-projects">Projects</a>
+            <a href="#qa-dashboard" class="text-sm font-medium text-gray-400 hover:text-white transition-colors duration-200" data-i18n="nav-qa">QA Lab</a>
+            <a href="#experience" class="text-sm font-medium text-gray-400 hover:text-white transition-colors duration-200" data-i18n="nav-experience">Experience</a>
+            <a href="#contact" class="text-sm font-medium text-gray-400 hover:text-white transition-colors duration-200" data-i18n="nav-contact">Contact</a>
+        </nav>
+
+        <!-- Dynamic Controls (Lang / Theme / Mobile menu) -->
+        <div class="flex items-center space-x-4">
+            <!-- Language Switcher EN/RU -->
+            <button id="lang-toggle" class="flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 active:scale-95 transition-all text-xs font-semibold select-none cursor-pointer" title="Switch Language">
+                <span id="lang-label-current">EN</span>
+                <i data-lucide="languages" class="w-3.5 h-3.5 text-brand-teal"></i>
+            </button>
+
+            <!-- Light/Dark Mode Switcher -->
+            <button id="theme-toggle" class="p-2.5 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 text-gray-400 hover:text-white transition-all cursor-pointer" title="Toggle Theme">
+                <i data-lucide="sun" class="w-4 h-4 hidden dark:block text-brand-teal"></i>
+                <i data-lucide="moon" class="w-4 h-4 block dark:hidden text-brand-purple"></i>
+            </button>
+
+            <!-- Mobile Nav Toggle -->
+            <button id="mobile-menu-toggle" class="md:hidden p-2.5 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 text-gray-400 hover:text-white transition-all cursor-pointer">
+                <i data-lucide="menu" class="w-5 h-5" id="menu-icon"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Drawer Layer (Initially collapsed) -->
+    <div id="mobile-drawer" class="hidden md:hidden fixed top-20 left-0 w-full bg-brand-dark/95 border-b border-white/5 backdrop-blur-lg flex-col px-4 py-6 space-y-4 animate-slideDown shadow-2xl">
+        <a href="#about" class="mobile-nav-link text-base font-medium text-gray-400 hover:text-white block py-2 px-3 rounded-lg hover:bg-white/5" data-i18n="nav-about">About</a>
+        <a href="#skills" class="mobile-nav-link text-base font-medium text-gray-400 hover:text-white block py-2 px-3 rounded-lg hover:bg-white/5" data-i18n="nav-skills">Skills</a>
+        <a href="#projects" class="mobile-nav-link text-base font-medium text-gray-400 hover:text-white block py-2 px-3 rounded-lg hover:bg-white/5" data-i18n="nav-projects">Projects</a>
+        <a href="#qa-dashboard" class="mobile-nav-link text-base font-medium text-gray-400 hover:text-white block py-2 px-3 rounded-lg hover:bg-white/5" data-i18n="nav-qa">QA Lab</a>
+        <a href="#experience" class="mobile-nav-link text-base font-medium text-gray-400 hover:text-white block py-2 px-3 rounded-lg hover:bg-white/5" data-i18n="nav-experience">Experience</a>
+        <a href="#contact" class="mobile-nav-link text-base font-medium text-gray-400 hover:text-white block py-2 px-3 rounded-lg hover:bg-white/5" data-i18n="nav-contact">Contact</a>
+    </div>
+</header>

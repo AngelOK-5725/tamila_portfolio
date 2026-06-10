@@ -1,0 +1,75 @@
+<section id="contact" class="py-24 relative overflow-hidden px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto scroll-mt-20">
+    <!-- Header -->
+    <div class="mb-16 text-center">
+        <h2 class="text-xs font-semibold text-brand-purple uppercase tracking-widest font-mono mb-2" data-i18n="contact-section-badge">07 . Connection</h2>
+        <h3 class="text-3xl sm:text-4xl font-display font-extrabold tracking-tight bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent" data-i18n="contact-section-title">Let's Connect</h3>
+        <p class="max-w-xl mx-auto text-sm sm:text-base text-gray-400 mt-2 font-normal" data-i18n="contact-section-subtitle">
+            I am always open to new professional collaborations, QA operations, Python backend contracts, or simple technical exchanges!
+        </p>
+    </div>
+
+    <!-- Contact Bento Panel -->
+    <div class="p-8 sm:p-12 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md relative overflow-hidden shadow-2xl flex flex-col md:flex-row items-center justify-between gap-10">
+        <!-- Floating purple blur inside -->
+        <div class="absolute bottom-0 left-1/4 w-48 h-48 bg-brand-purple/10 blur-3xl rounded-full"></div>
+        
+        <!-- Left: Branding & Direct contacts -->
+        <div class="space-y-6 text-center md:text-left relative z-10 w-full md:w-1/2">
+            <h4 class="text-2xl font-display font-extrabold text-white" data-i18n="contact-panel-title">Let's build reliable software together</h4>
+            <p class="text-gray-400 text-sm leading-relaxed" data-i18n="contact-panel-desc">
+                Drop me a direct line via Telegram, email, or explore my system repositories on GitHub. I respond quickly.
+            </p>
+            
+            <div class="flex flex-col gap-4 max-w-sm mx-auto md:mx-0">
+                <!-- Email Item -->
+                <div class="flex items-center justify-between p-3.5 rounded-xl bg-black/40 border border-white/5 group hover:border-brand-purple/20 transition-all">
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="mail" class="w-4 h-4 text-brand-purple"></i>
+                        <span class="text-xs sm:text-sm font-mono text-gray-300 selection:bg-brand-purple">youdo5725@gmail.com</span>
+                    </div>
+                    <button class="p-2 rounded-lg bg-white/5 text-gray-400 hover:text-white hover:bg-brand-purple/20 transition-all cursor-pointer copy-btn" data-copy-val="youdo5725@gmail.com" title="Copy Email">
+                        <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                    </button>
+                </div>
+
+                <!-- Telegram Item -->
+                <div class="flex items-center justify-between p-3.5 rounded-xl bg-black/40 border border-white/5 group hover:border-brand-teal/20 transition-colors">
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="send" class="w-4 h-4 text-brand-teal"></i>
+                        <span class="text-xs sm:text-sm font-mono text-gray-300">@tamila_kh</span>
+                    </div>
+                    <button class="p-2 rounded-lg bg-white/5 text-gray-400 hover:text-white hover:bg-brand-teal/20 transition-all cursor-pointer copy-btn" data-copy-val="@tamila_kh" title="Copy Telegram Handle">
+                        <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: CTA action blocks -->
+        <div class="flex flex-col gap-4 w-full md:w-1/2 justify-center max-w-sm relative z-10">
+            <!-- Direct Telegram Link Banner -->
+            <a href="https://t.me/tamila_kh" target="_blank" class="p-5 rounded-2xl bg-gradient-to-r from-brand-violet to-brand-purple text-white hover:brightness-110 shadow-lg hover:shadow-brand-purple/25 transition-all text-center flex items-center justify-center space-x-2.5 font-semibold group cursor-pointer">
+                <i data-lucide="message-square" class="w-5 h-5 group-hover:scale-105 transition-transform"></i>
+                <span data-i18n="contact-chat-btn">Chat on Telegram</span>
+            </a>
+
+            <!-- Github -->
+            <a href="https://github.com" target="_blank" class="p-5 rounded-2xl bg-white/5 border border-white/10 text-gray-200 hover:text-white hover:bg-white/10 active:scale-98 transition-all text-center flex items-center justify-center space-x-2.5 font-medium cursor-pointer">
+                <i data-lucide="github" class="w-5 h-5"></i>
+                <span data-i18n="contact-git-btn">GitHub Profile</span>
+            </a>
+
+            <!-- Download CV (Simulated responsive trigger) -->
+            <button id="cv-download-btn" class="p-5 rounded-2xl bg-white/5 border border-white/10 text-brand-teal hover:bg-brand-teal/10 hover:border-brand-teal/30 active:scale-98 transition-all text-center flex items-center justify-center space-x-2.5 font-medium cursor-pointer">
+                <i data-lucide="download" class="w-5 h-5"></i>
+                <span data-i18n="contact-cv-btn">Download Resume PDF</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Clipboard Toast Alert Element -->
+    <div id="toast-message" class="fixed bottom-8 right-8 z-50 px-5 py-3 rounded-xl bg-gray-950 border border-brand-teal/30 text-brand-teal font-mono text-xs shadow-2xl flex items-center space-x-2.5 translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+        <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+        <span id="toast-text">Content Copied!</span>
+    </div>
+</section>

@@ -1,0 +1,160 @@
+/* 
+ * Premium Cinematic Custom Styles
+ * Tamila Khamraeva — Resume Portfolio
+ */
+
+/* Custom Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes caret {
+  from, to { border-color: transparent }
+  50% { border-color: #F97316; }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleUp {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Animations Application UI helper classes */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-caret {
+  animation: caret 1s step-end infinite;
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Timeline expand transition */
+.timeline-extra {
+  transition: max-height 0.5s ease-in-out, opacity 0.4s ease-in-out, margin-top 0.4s ease-in-out;
+}
+
+/* Scroll reveal helper class */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 9999px;
+  border: 2px solid #050505;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F97316;
+}
+
+/* Light / Dark Mode Override adjustments for extreme polished quality */
+html.light body {
+  background-color: #F9FAFB !important;
+  color: #1F2937 !important;
+}
+
+html.light h1,
+html.light h2,
+html.light h3,
+html.light h4,
+html.light h5,
+html.light h6 {
+  color: #111827 !important;
+}
+
+html.light p {
+  color: #4B5563 !important;
+}
+
+/* Card overrides for Light Mode */
+html.light .bg-white\/5 {
+  background-color: rgba(0, 0, 0, 0.02) !important;
+}
+
+html.light .bg-gray-950\/70 {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+html.light .border-white\/5,
+html.light .border-white\/10 {
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+html.light .text-gray-300 {
+  color: #374151 !important;
+}
+
+html.light .text-gray-400 {
+  color: #4B5563 !important;
+}
+
+html.light .text-zinc-500 {
+  color: #9CA3AF !important;
+}
+
+html.light .bg-black\/40 {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+html.light .text-white {
+  color: #111827 !important;
+}
+
+/* Interactive particle canvas backdrop override */
+html.light #ambient-canvas {
+  opacity: 0.15 !important;
+}
+
+/* Hover glow effects for premium feeling */
+.hover-glow:hover {
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.15);
+}
